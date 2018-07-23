@@ -77,8 +77,8 @@ public class Main implements AQ {
 
     static void battleMonsters(Robot robot) {
         robot.mouseMove(BATTLE_X, BATTLE_Y);
-//        click(robot);
-//        robot.delay(6000);
+        click(robot);
+        robot.delay(6000);
     }
 
     static NumberList readMonster(Robot robot) {

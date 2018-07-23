@@ -24,6 +24,7 @@ public class Ballyhoo {
     
     public static void openChest(Robot robot) {
         robot.mouseMove(OPEN_CHEST_X, OPEN_CHEST_Y);
+        System.exit(0); //stops program to get previous xy coordinates
         Main.click(robot);
 }
     
@@ -61,8 +62,8 @@ public class Ballyhoo {
         robot.delay(1000);
     }
     
-    public static final int OPEN_CHEST_X = 650;
-    public static final int OPEN_CHEST_Y = 270;
+    public static final int OPEN_CHEST_X = 300;
+    public static final int OPEN_CHEST_Y = 40;
     public static final Rectangle GREYNESS = new Rectangle (650, 270, 200, 200);
     public static final int GET_PRIZE_NOT_GREY_X = 1000;
     public static final int GET_PRIZE_NOT_GREY_Y = 630;

@@ -3,8 +3,8 @@ package AQ;
 import java.awt.Rectangle;
 
 public interface AQ {
-    public static final int BATTLE_X = 870;
-    public static final int BATTLE_Y = 350;
+    public static final int BATTLE_X = 870; //correct
+    public static final int BATTLE_Y = 350; //correct
     public static final int READ_X = 1150;
     public static final int READ_Y = 600;
     public static final Rectangle ELEMENT_BOX = new Rectangle(1175, 225, 27, 143);
