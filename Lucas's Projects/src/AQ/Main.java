@@ -16,7 +16,7 @@ public class Main implements AQ {
         int v = 0;
         int d = 0;
         while (true) {
-//            battleMonsters(robot);
+            battleMonsters(robot);
             long startTime = System.currentTimeMillis();
             Battle battle = new Battle(robot.createScreenCapture(NAME), robot);
             if (!battle.hybeeScout() && !battle.moglinFriends() && !battle.theSeeker() && !battle.rayfish()) {
@@ -77,13 +77,13 @@ public class Main implements AQ {
 
     static void battleMonsters(Robot robot) {
         robot.mouseMove(BATTLE_X, BATTLE_Y);
-        click(robot);
-        robot.delay(6000);
+//        click(robot);
+//        robot.delay(6000);
     }
 
     static NumberList readMonster(Robot robot) {
         robot.delay(6000);
-        robot.mouseMove(READ_X, READ_Y);
+//        robot.mouseMove(READ_X, READ_Y);
         robot.delay(200); //aq has delay
         BufferedImage elementBox = robot.createScreenCapture(ELEMENT_BOX);
         return AQOCR.recognize(elementBox, AQOCR.BLUEISH);  //record numbers from image into NumberList
